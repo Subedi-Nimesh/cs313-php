@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-<?php include'header.php';?>
+<?php include 'header.php';?>
     <button>Log in as Administrator</button>
     <button>Log in as Tester</button>
 </body>
