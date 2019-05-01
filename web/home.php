@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include'header.php';?>
+<div class="header">
+<?php include 'header.php';?>
+</div>
     <?php
         echo "<h1>Welcome to the Home page!</h1>";
         echo "<hr>";
