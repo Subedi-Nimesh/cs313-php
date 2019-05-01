@@ -1,6 +1,8 @@
 <?php
 $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 ?>
+
+<h1>React</h1>
 <nav class="navbar">
 	<ul class="nav navbar-nav">
 
