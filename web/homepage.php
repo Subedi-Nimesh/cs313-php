@@ -13,10 +13,9 @@
 		<p style="text-align: center; font-family: Verdana">
             <button onclick="window.location.href='#about_me'"> About Me </button>
             <button onclick="window.location.href='#schedule'"> Course Schedule </button>
-            <button onclick="window.location.href='index.html'"> &#8592; CS 313 Assignments </button>
+            <button onclick="window.location.href='index.html'"> CS 313 Assignments </button>
             <button onclick="window.location.href='https://www.facebook.com/NIMESH.SUB3DI'"> Facebook </button>
             <button onclick="window.location.href='https://www.instagram.com/nimesh.subedi1/?hl=en'"> Instagram </button>
-            <button type="button" onclick = "alert('window.location.href='meme.jpg'')">Don't Click Me!</button>
         </p>
 
 
@@ -29,13 +28,13 @@
 		<p>I hope to use my time at Brigham Young University - Idaho for more than getting credits and a degree.  It is important to me that I gain experience as a leader and civically engaged citizen, so that I can better myself and my community during and after my I receive my education.</p>
 
 		<p>I am originally from Nepal but found my home in the beautiful mountains of Utah. Life is about enjoying the simple things. I enjoy Family, Walking, Camping, Movies, Dinner...<br>
-		My favorite music: Mercy by Kanye West<br>
+		My favorite music: Play that song by Train<br>
 		My favorite Holidays: Holi (Festival of colors)!!!<br><br>
 
 		My friends and family mean the world to me, and have always been a huge part of my life.</p>
 
 		<div style="text-align:center">
-			<img src="Family.jpg" alt="My Family" width="639" height="622">
+			<img src="family.jpg" alt="My Family" width="639" height="622">
 		</div>
 		<hr>
 		<blockquote style = "font-family:'Arieal'; font-style:italic;"> 
@@ -44,7 +43,7 @@
 		<hr>
 
 		<table style="width:97%; border-collapse: collapse; font-size: 2em; margin-left: auto; margin-right: auto;background-color: lightgrey">
-		<caption id ="schedule"><b>Course Schedule: Fall 2018</b></caption>
+		<caption id ="schedule"><b>Course Schedule: Spring 2019</b></caption>
 		<tr style="border: 2px solid black; background-color: gray">
 			<th style="text-align: left;">Course Number</th>
 			<th style="text-align: left;">Course Description</th>
@@ -55,23 +54,30 @@
 		<tr style="border: 2px solid black">
 			<td>CS 235</td>
 			<td>Data Structures</td>
-			<td>03</td>
-			<td>MWF 10:15-11:15 PM</td>
-			<td>STC 148</td>
+			<td>02</td>
+			<td>MWF 11:30-12:30 PM</td>
+			<td>STC 375</td>
 		</tr>
 		<tr style="border: 2px solid black;">
-			<td>CS 213</td>
-			<td>Web Engineering I</td>
+			<td>CS 313</td>
+			<td>Web Engineering II</td>
 			<td>01</td>
-			<td>TR 9:45-11:15 AM</td>
-			<td>STC 398</td>
+			<td>TR 3:15-4:45 AM</td>
+			<td>STC 361</td>
 		</tr>
 		<tr style="border: 2px solid black">
-			<td>FDREL 327</td>
-			<td>Pearl of Great Price</td>
-			<td>04</td>
-			<td>TR 11:30-12:30 PM</td>
-			<td>TAY 275</td>
+			<td>CS 364</td>
+			<td>Software Engineering I</td>
+			<td>01</td>
+			<td>MTWRF 12:45-1:45 PM</td>
+			<td>STC 385</td>
+		</tr>
+        <tr style="border: 2px solid black">
+			<td>FDENG 301</td>
+			<td>Advanced Writing and Research</td>
+			<td>12</td>
+			<td>MWF 2:00-3:00 PM</td>
+			<td>SMI 268</td>
 		</tr>
 	</table>
 	
