@@ -9,9 +9,15 @@
 	<body style="background-image:url('bgimg.jpg'); height=100%;
 		background-position: center; background-repeat: no-repeat;
 		background-size: cover;">
-		<button onclick="window.location.href='index.html'"> &#8592; CS 213 Assignments </button>
 		<h1 style="text-align: center;"><u>Welcome to Nimesh Subedi's Home Page</u></h1>
-		<p style="text-align: center; font-family: Verdana"><button onclick="window.location.href='#about_me'"> About Me </button> <button onclick="window.location.href='#schedule'"> Course Schedule </button> <button onclick="window.location.href='https://www.facebook.com/Rajendra.cool'"> Facebook </button> <button onclick="window.location.href='https://www.instagram.com/nimesh.subedi1/?hl=en'"> Instagram </button> <button type="button" onclick = "alert('I thought I told you not to click me. Why are you STALKING me?')">Don't Click Me!</button></p>
+		<p style="text-align: center; font-family: Verdana">
+            <button onclick="window.location.href='#about_me'"> About Me </button>
+            <button onclick="window.location.href='#schedule'"> Course Schedule </button>
+            <button onclick="window.location.href='index.html'"> &#8592; CS 313 Assignments </button>
+            <button onclick="window.location.href='https://www.facebook.com/NIMESH.SUB3DI'"> Facebook </button>
+            <button onclick="window.location.href='https://www.instagram.com/nimesh.subedi1/?hl=en'"> Instagram </button>
+            <button type="button" onclick = "alert('window.location.href='meme.jpg'')">Don't Click Me!</button>
+        </p>
 
 
 		<div style="text-align:center">
