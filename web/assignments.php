@@ -13,17 +13,17 @@
 		<ul>
 			<h2>
                 <li><a href="homepage.php">Home Page</a></li>
-    			<li><a href="assign02.html">Comming Soon</a></li>
-	    		<li><a href="assign03.html">Comming Soon</a></li>
-		    	<li><a href="assign04.html">Comming Soon</a></li>
-			    <li><a href="assign05.html">Comming Soon</a></li>
-    			<li><a href="assign06.html">Comming Soon</a></li>
-	    		<li><a href="assign07.html">Comming Soon</a></li>
-		    	<li><a href="assign08.html">Comming Soon</a></li>
-			    <li><a href="assign09.html">Comming Soon</a></li>
-    			<li><a href="assign10.html">Comming Soon</a></li>
-	    		<li><a href="assign11.html">Comming Soon</a></li>
-                <li><a href="assign12.html">Comming Soon</a></li>
+    			<li><a href="assign02.php">Comming Soon</a></li>
+	    		<li><a href="assign03.php">Comming Soon</a></li>
+		    	<li><a href="assign04.php">Comming Soon</a></li>
+			    <li><a href="assign05.php">Comming Soon</a></li>
+    			<li><a href="assign06.php">Comming Soon</a></li>
+	    		<li><a href="assign07.php">Comming Soon</a></li>
+		    	<li><a href="assign08.php">Comming Soon</a></li>
+			    <li><a href="assign09.php">Comming Soon</a></li>
+    			<li><a href="assign10.php">Comming Soon</a></li>
+	    		<li><a href="assign11.php">Comming Soon</a></li>
+                <li><a href="assign12.php">Comming Soon</a></li>
             </h2>
 		</ul>
 	</body>

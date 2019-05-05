@@ -15,7 +15,7 @@
         <p class="buttons">
             <button onclick="window.location.href='#about_me'"> About Me </button>
             <button onclick="window.location.href='#schedule'"> Course Schedule </button>
-            <button onclick="window.location.href='index.html'"> CS 313 Assignments </button>
+            <button onclick="window.location.href='assignments.php'"> CS 313 Assignments </button>
             <button onclick="window.location.href='https://www.facebook.com/NIMESH.SUB3DI'"> Facebook </button>
             <button onclick="window.location.href='https://www.instagram.com/nimesh.subedi1/?hl=en'"> Instagram </button>
         </p>
