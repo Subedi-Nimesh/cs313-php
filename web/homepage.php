@@ -5,12 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Nimesh Subedi</title>
+        <link rel="stylesheet" type="text/css" href="homepage.css">
 	</head>
 	<body style="background-image:url('bgimg.jpg'); height=100%;
 		background-position: center; background-repeat: no-repeat;
-		background-size: cover;">
-		<h1 style="text-align: center;"><u>Welcome to Nimesh Subedi's Home Page</u></h1>
-		<p style="text-align: center; font-family: Verdana">
+        background-size: cover;">
+
+		<h1 class="center"><u>Welcome to Nimesh Subedi's Home Page</u></h1>
+        <p class="buttons">
             <button onclick="window.location.href='#about_me'"> About Me </button>
             <button onclick="window.location.href='#schedule'"> Course Schedule </button>
             <button onclick="window.location.href='index.html'"> CS 313 Assignments </button>
@@ -19,11 +21,11 @@
         </p>
 
 
-		<div style="text-align:center">
+		<div class="center">
 			<img src="me.jpg" alt="My Picture" width="450" height="600">
 		</div>
 
-		<p><h2 id ="about_me">About me:</h2>My name is Nimesh Subedi and I'm a 20-year-old. I am <a style="color:red;"> An International Student</a> currently enrolled as a full-time student at <I>The Brigham Young University - Idaho</I> working on a <b>Bachelor's degree in Computer Science</b>
+		<p><h2 id ="about_me">About me:</h2>My name is Nimesh Subedi and I'm a 20-year-old. I am <a id="red"> An International Student</a> currently enrolled as a full-time student at <I>The Brigham Young University - Idaho</I> working on a <b>Bachelor's degree in Computer Science</b>
 		
 		<p>I hope to use my time at Brigham Young University - Idaho for more than getting credits and a degree.  It is important to me that I gain experience as a leader and civically engaged citizen, so that I can better myself and my community during and after my I receive my education.</p>
 
@@ -33,46 +35,46 @@
 
 		My friends and family mean the world to me, and have always been a huge part of my life.</p>
 
-		<div style="text-align:center">
+		<div class="center">
 			<img src="family.jpg" alt="My Family" width="639" height="622">
 		</div>
 		<hr>
-		<blockquote style = "font-family:'Arieal'; font-style:italic;"> 
+		<blockquote> 
             "If you can't explain it simply, you don't understand it well enough.<br>Two things are infinite: the universe and human stupidity; and I'm not sure about the universe." - Albert Einstein
          </blockquote>
 		<hr>
 
-		<table style="width:97%; border-collapse: collapse; font-size: 2em; margin-left: auto; margin-right: auto;background-color: lightgrey">
+		<table>
 		<caption id ="schedule"><b>Course Schedule: Spring 2019</b></caption>
-		<tr style="border: 2px solid black; background-color: gray">
-			<th style="text-align: left;">Course Number</th>
-			<th style="text-align: left;">Course Description</th>
-			<th style="text-align: left;">Section Number</th>
-			<th style="text-align: left;">Class Time</th>
-			<th style="text-align: left;">Location</th>
+		<tr id="toprow">
+			<th class="heading">Course Number</th>
+			<th class="heading">Course Description</th>
+			<th class="heading">Section Number</th>
+			<th class="heading">Class Time</th>
+			<th class="heading">Location</th>
 		</tr>
-		<tr style="border: 2px solid black">
+		<tr class="row">
 			<td>CS 235</td>
 			<td>Data Structures</td>
 			<td>02</td>
 			<td>MWF 11:30-12:30 PM</td>
 			<td>STC 375</td>
 		</tr>
-		<tr style="border: 2px solid black;">
+		<tr class="row">
 			<td>CS 313</td>
 			<td>Web Engineering II</td>
 			<td>01</td>
 			<td>TR 3:15-4:45 AM</td>
 			<td>STC 361</td>
 		</tr>
-		<tr style="border: 2px solid black">
+		<tr class="row">
 			<td>CS 364</td>
 			<td>Software Engineering I</td>
 			<td>01</td>
 			<td>MTWRF 12:45-1:45 PM</td>
 			<td>STC 385</td>
 		</tr>
-        <tr style="border: 2px solid black">
+        <tr class="row">
 			<td>FDENG 301</td>
 			<td>Advanced Writing and Research</td>
 			<td>12</td>
@@ -81,6 +83,6 @@
 		</tr>
 	</table>
 	
-	<p style = "text-align: right">Contact information: sub17003@byui.edu<br>&#169; Copyright</p>
+	<p class="footer">Contact information: sub17003@byui.edu<br>&#169; Copyright</p>
 	</body>
 </html>

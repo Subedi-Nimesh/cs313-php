@@ -1,0 +1,51 @@
+body {
+    background-image: url('bgimg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.buttons {
+    text-align: center;
+    font-family: Verdana;
+}
+
+.center {
+    text-align: center;
+}
+
+#red{
+    color: red;
+}
+
+blockquote{
+    font-family:'Arieal';
+    font-style:italic;
+}
+
+table{
+    width:97%;
+    border-collapse: collapse;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+}
+
+.heading{
+    text-align: left;
+}
+
+#footer{
+    text-align: right;
+}
+
+.row {
+    border: 2px solid black;
+}
+
+#toprow{
+    border: 2px solid black;
+    background-color: gray
+}
