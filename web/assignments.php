@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Nimesh Subedi's Assignments</title>
+        <link rel="stylesheet" type="text/css" href="assignments.css">
 	</head>
 	<body style="background-image:url('bground.jpg'); height=100%;
 		background-position: center; background-repeat: no-repeat;
