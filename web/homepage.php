@@ -20,7 +20,7 @@
 
 
 		<div style="text-align:center">
-			<img src="me.jpg" alt="My Picture" width="600" height="450">
+			<img src="me.jpg" alt="My Picture">
 		</div>
 
 		<p><h2 id ="about_me">About me:</h2>My name is Nimesh Subedi and I'm a 20-year-old. I am <a style="color:red;"> An International Student</a> currently enrolled as a full-time student at <I>The Brigham Young University - Idaho</I> working on a <b>Bachelor's degree in Computer Science</b>
