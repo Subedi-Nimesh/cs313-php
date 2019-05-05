@@ -18,7 +18,7 @@
             <button onclick="window.location.href='assignments.php'"> CS 313 Assignments </button>
             <button onclick="window.location.href='https://www.facebook.com/NIMESH.SUB3DI'"> Facebook </button>
             <button onclick="window.location.href='https://www.instagram.com/nimesh.subedi1/?hl=en'"> Instagram </button>
-            <button type="button" onclick = "alert(<?php echo 'Current time on this server is' . date('h.i.sa'); ?>)">Current Time</button>
+            <button onclick="window.location.href='localtime.php'">Current Time</button>
         </p>
 
 
