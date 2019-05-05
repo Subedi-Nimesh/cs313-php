@@ -15,6 +15,7 @@
             $hour = $info['hours'];
             $min = $info['minutes'];
             $sec = $info['seconds'];
+            $current_time = "$hour:$min:$sec";
         ?>
 		<h1 class="center"><u>Welcome to Nimesh Subedi's Home Page</u></h1>
         <p class="buttons">
@@ -23,7 +24,7 @@
             <button onclick="window.location.href='assignments.php'"> CS 313 Assignments </button>
             <button onclick="window.location.href='https://www.facebook.com/NIMESH.SUB3DI'"> Facebook </button>
             <button onclick="window.location.href='https://www.instagram.com/nimesh.subedi1/?hl=en'"> Instagram </button>
-            <button type="button" onclick = "alert('<?php echo '$hour:$min:$sec' ?>')">Current Time</button>
+            <button type="button" onclick = "alert('<?php echo "Current time on this server is $current_time" ?>')">Current Time</button>
         </p>
 
 
