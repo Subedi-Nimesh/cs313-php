@@ -36,19 +36,19 @@ session_start();
                 <div class="options">
                     <h2>Banana</h2>
                     <img src="banana.jpg" alt="Banana" width="300" height="300"><br>
-                    <input type="checkbox" name="fruits[]" value="Banana" onchange="selectfruit('Banana')"> I want Banana <br>
+                    <input type="Button" name="fruits[]" value="Banana" onchange="selectfruit('Banana')"> I want Banana <br>
                 </div>
 
                 <div class="options">
                     <h2>Mango</h2>
                     <img src="mango.jpg" alt="Mango" width="300" height="300"><br>
-                    <input type="checkbox" name="fruits[]" value="Mango" onclick="selectfruit('Mango')"> I want Mango <br>
+                    <input type="Button" name="fruits[]" value="Mango" onclick="selectfruit('Mango')"> I want Mango <br>
                 </div>
 
                 <div class="options">
                     <h2>Strawberry</h2>
                     <img src="strawberry.jpg" alt="Strawberry" width="400" height="300"><br>
-                    <input type="checkbox" name="fruits[]" value="Strawberry" onclick="selectfruit('Straberry')"> I want Strawberry <br>
+                    <input type="Button" name="fruits[]" value="Strawberry" onclick="selectfruit('Straberry')"> I want Strawberry <br>
                 </div>
            <input type="submit"  name="submit" class="submitbtn" value="Proceed Cart">
         </form>
