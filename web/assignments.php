@@ -14,7 +14,7 @@
 		<ul>
 			<h2>
                 <li><a href="homepage.php">Home Page</a></li>
-    			<li><a href="assign02.php">Comming Soon</a></li>
+    			<li><a href="shoppingindex.php">Shopping Cart</a></li>
 	    		<li><a href="assign03.php">Comming Soon</a></li>
 		    	<li><a href="assign04.php">Comming Soon</a></li>
 			    <li><a href="assign05.php">Comming Soon</a></li>
