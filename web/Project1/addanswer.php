@@ -1,16 +1,5 @@
 <?php
-  include'connectdatabase.php';
-  
-  if (isset($_POST['newAnswer'])) {
-    $answer = $_POST['newAnswer'];
-    $answer_type = $_POST['typeSelect'];
-    $db->query("INSERT INTO answers (answer, answer_type) VALUES ('".$answer."', ".$answer_type.")");
-  } else if (isset($_POST['newQuestion'])) {
-    $question = $_POST['newQuestion'];
-    $answer_id = $_POST['answerSelect'];
-    $db->query("INSERT INTO questions (questions, answers_id) VALUES ('".$question."', ".$answer_id.")");
-  }
-
+	include'connectdatabase.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +9,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Display Questions</title>
+  <script>
+    function confirmation()
+    {
+      return confirm('Are you sure?');
+    }
+  </script>
 </head>
 <body>
 <!-- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -42,16 +37,22 @@
   </a>
 </nav> -->
 
-	<p><b>Questions:</b><br> 
-		<?php
-			foreach ($db->query('SELECT * FROM questions') as $row)
+	<p><b>Add new Answers:</b><br> 
+	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
+  	<?php
+    echo "<select name='typeSelect' required>";
+    echo "<option>Choose Types</option>";
+			foreach ($db->query('SELECT * FROM types') as $row)
 			{
-			  	echo $row['id']. " ". $row['questions']. '<br>';
+			  	echo "<option value=".$row['id'].">".$row['type']."</option><br>";
       }
-      
+      echo "</select><br>";
+
+      echo "<input type='text' name='newAnswer' required><br><br>";
+
 		?>
 
-    <button><a href="addquestion.php">Add Question</a></button>
-    <button><a href="addanswer.php">Add Answer</a></button>
-    </body>
+    <button type='submit'>Submit</button>
+  </form>
+</body>
 </html>
