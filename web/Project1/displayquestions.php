@@ -11,7 +11,7 @@
 	<title>Display Questions</title>
 </head>
 <body>
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<!-- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <img src="/w3images/avatar_smoke.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
@@ -29,7 +29,7 @@
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
   </a>
-</nav>
+</nav> -->
 
 	<p><b>Questions:</b><br> 
 		<?php
