@@ -35,7 +35,7 @@
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-			  	echo $row['id'].'<br>';
+			  	echo $row['id']. " ". $row['questions']. '<br>';
 			}
 		?>
     </body>
