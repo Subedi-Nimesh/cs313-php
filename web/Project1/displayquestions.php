@@ -5,7 +5,12 @@
     $answer = $_POST['newAnswer'];
     $answer_type = $_POST['typeSelect'];
     $db->query("INSERT INTO answers (answer, answer_type) VALUES ('".$answer."', ".$answer_type.")");
+  } else if (isset($_POST['newQuestion'])) {
+    $question = $_POST['newQuestion'];
+    $answer_id = $_POST['answerSelect'];
+    $db->query("INSERT INTO questions (questions, answer_id) VALUES ('".$question."', ".$answer_id.")");
   }
+
 ?>
 
 <!DOCTYPE html>

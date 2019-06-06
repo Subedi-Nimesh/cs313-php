@@ -37,7 +37,7 @@
   </a>
 </nav> -->
 
-	<p><b>Add new Answers:</b><br> 
+	<p><b>Add new Questions:</b><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
     echo "<select name='typeSelect' required>";
@@ -46,10 +46,17 @@
 			{
 			  	echo "<option value=".$row['id'].">".$row['type']."</option><br>";
       }
-      echo "</select><br>";
+      echo "</select>";
 
-      echo "<input type='text' name='newAnswer' required><br><br>";
+      echo "<input type='text' name='newQuestion' required>";
 
+    echo "<select name='answerSelect' required>";
+    echo "<option>Choose Answer</option>";
+			foreach ($db->query('SELECT * FROM answers') as $row)
+			{
+			  	echo "<option value=".$row['id'].">".$row['answer']."</option><br>";
+      }
+      echo "</select>";
 		?>
 
     <button type='submit'>Submit</button>

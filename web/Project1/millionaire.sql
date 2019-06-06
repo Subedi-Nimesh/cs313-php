@@ -15,7 +15,6 @@ Create TABLE answers (
 CREATE TABLE questions (
 	id SERIAL PRIMARY KEY,
 	questions varchar(265) NOT NULL,
-	answer_type INT NOT NULL REFERENCES types(id),
 	answers_id INT NOT NULL REFERENCES answers(id)
 );
 
