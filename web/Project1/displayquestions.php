@@ -46,7 +46,7 @@
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-			  	echo "<form action='editquestion.php' method='POST' id='form'><a href name='editQuestion' type='submit'>".$row['id']. " ". $row['questions']. '<br></form>';
+			  	echo "<form action='editquestion.php' method='POST' id='form'><button type='submit'>".$row['id']. " ". $row['questions']. '</button><br></form>';
       }
       
 		?>
