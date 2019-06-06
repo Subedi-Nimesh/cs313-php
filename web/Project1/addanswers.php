@@ -40,7 +40,7 @@
 	<p><b>Add new Answers:</b><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
-    echo "<select name='typeSelect'>";
+    echo "<select name='typeSelect' required>";
     echo "<option>Choose Types</option>";
 			foreach ($db->query('SELECT * FROM types') as $row)
 			{
@@ -48,7 +48,7 @@
       }
       echo "</select>";
 
-      echo "<input type='text' name='newAnswer'>";
+      echo "<input type='text' name='newAnswer' required>";
 
 		?>
 

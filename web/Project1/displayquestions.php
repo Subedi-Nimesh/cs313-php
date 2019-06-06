@@ -1,5 +1,11 @@
 <?php
-	include'connectdatabase.php';
+  include'connectdatabase.php';
+  
+  if (isset($_POST['newAnswer'])) {
+    $answer = $_POST['newAnswer'];
+    $answer_type = $_POST['typeSelect'];
+     db->query("INSERT INTO answers (answer, answer_type) VALUES ('".$answer."', ".$answer_type.")");
+  }
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +42,8 @@
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
 			  	echo $row['id']. " ". $row['questions']. '<br>';
-			}
+      }
+      
 		?>
     </body>
 </html>
