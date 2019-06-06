@@ -46,7 +46,7 @@
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-			  	echo "<a href onclick='editquestion.php'>".$row['id']. " ". $row['questions']. '</a><br>';
+			  	echo "<a href=\"editquestion.php?Id=".$row['id'].">". $row['questions']. "</a><br>";
       }
       
 		?>
