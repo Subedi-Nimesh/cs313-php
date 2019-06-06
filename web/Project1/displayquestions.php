@@ -8,7 +8,7 @@
   } else if (isset($_POST['newQuestion'])) {
     $question = $_POST['newQuestion'];
     $answer_id = $_POST['answerSelect'];
-    $db->query("INSERT INTO questions (questions, answer_id) VALUES ('".$question."', ".$answer_id.")");
+    $db->query("INSERT INTO questions (questions, answers_id) VALUES ('".$question."', ".$answer_id.")");
   }
 
 ?>
