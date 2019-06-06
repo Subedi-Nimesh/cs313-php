@@ -40,23 +40,15 @@
 	<p><b>Add new Questions:</b><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
-    echo "<select name='typeSelect' required>";
-    echo "<option>Choose Types</option>";
-			foreach ($db->query('SELECT * FROM types') as $row)
-			{
-			  	echo "<option value=".$row['id'].">".$row['type']."</option><br>";
-      }
-      echo "</select>";
+        echo "Enter New Question: <input type='text' name='newQuestion' required><br>";
 
-      echo "<input type='text' name='newQuestion' required>";
-
-    echo "<select name='answerSelect' required>";
-    echo "<option>Choose Answer</option>";
-			foreach ($db->query('SELECT * FROM answers') as $row)
-			{
-			  	echo "<option value=".$row['id'].">".$row['answer']."</option><br>";
-      }
-      echo "</select>";
+        echo "Select Answer:<select name='answerSelect' required>";
+        echo "<option>Choose Answer</option>";
+                foreach ($db->query('SELECT * FROM answers') as $row)
+                {
+                    echo "<option value=".$row['id'].">".$row['answer']."</option><br>";
+            }
+            echo "</select>";
 		?>
 
     <button type='submit'>Submit</button>

@@ -42,7 +42,7 @@
   </a>
 </nav> -->
 
-	<p><b>Questions:</b><br> 
+	<p><b>All Questions:</b><br> 
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
