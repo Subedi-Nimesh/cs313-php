@@ -9,6 +9,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Display Questions</title>
+  <script>
+    function confirmation()
+    {
+      return confirm('Are you sure?');
+    }
+  </script>
 </head>
 <body>
 <!-- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -32,7 +38,7 @@
 </nav> -->
 
 	<p><b>Add new Answers:</b><br> 
-	<form action="displayquestions.php" method="POST">
+	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
     echo "<select name='typeSelect'>";
     echo "<option>Choose Types</option>";
@@ -42,11 +48,11 @@
       }
       echo "</select>";
 
-      echo "<input type='text' name='newAnswer'>"
+      echo "<input type='text' name='newAnswer'>";
 
 		?>
 
-    <button onclick="alert(Are you Sure?)";>Submit</button>
+    <button type='submit'>Submit</button>
   </form>
 </body>
 </html>
