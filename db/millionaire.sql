@@ -46,4 +46,4 @@ SELECT * From answers A JOIN types T ON A.answer_type=T.id;
 INSERT INTO questions (questions, answer_type, answers_id)
   VALUES ('What is the color of the sky?', 4, 5), ('What is man''s best best friend', 2, 4);
 
-SELECT * From questions Q JOIN answers A ON Q.answer_id=A.id;
+SELECT * From questions Q JOIN answers A ON Q.answers_id=A.id;
