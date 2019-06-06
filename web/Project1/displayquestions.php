@@ -4,7 +4,7 @@
   if (isset($_POST['newAnswer'])) {
     $answer = $_POST['newAnswer'];
     $answer_type = $_POST['typeSelect'];
-     db->query("INSERT INTO answers (answer, answer_type) VALUES ('".$answer."', ".$answer_type.")");
+    $db->query("INSERT INTO answers (answer, answer_type) VALUES ('".$answer."', ".$answer_type.")");
   }
 ?>
 
