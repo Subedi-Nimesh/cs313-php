@@ -51,8 +51,7 @@
 
     $result = $questionValue->fetch(PDO::FETCH_ASSOC);
     $result = $result['questions'];
-    echo $result;
-      echo "Enter New Question:  <input type='text' name='editquestion' id='question' value=$result required><br><br>";
+      echo "Enter New Question:  <input type='text' name='editquestion' id='question' value='$result' required><br><br>";
 
       echo "Select Answer:      <select name='answerSelect' required>";
         echo "<option>Choose Answer</option>";
