@@ -9,6 +9,21 @@
     $question = $_POST['newQuestion'];
     $answer_id = $_POST['answerSelect'];
     $db->query("INSERT INTO questions (questions, answers_id) VALUES ('".$question."', ".$answer_id.")");
+  } else if (isset($_POST['editquestion'])) {
+    $question = $_POST['editquestion'];
+    $answer_id = $_POST['answerSelect'];
+    $db->query("UPDATE questions SET question=$question, answers_id=$answer_id WHERE id=id");
+  } else if (isset($_POST['editAnswer'])) {
+    $answer = $_POST['editAnswer'];
+    $answer_type = $_POST['typeSelect'];
+    $db->query("UPDATE answers SET answer=$answer, answers_type=$answer_type WHERE id=id");
+  } else if (isset($_POST['deleteQuestion'])) {
+    $question = $_POST['deleteQuestion'];
+    $db->query("DELETE FROM questions WHERE id=id;");
+  } else if (isset($_POST['deleteAnswer'])) {
+    $answer = $_POST['deleteAnswer'];
+    $answer_type = $_POST['typeSelect'];
+    $db->query("DELETE FROM answers WHERE id=id;DELETE FROM questions WHERE id=answer_id;");
   }
 
 ?>

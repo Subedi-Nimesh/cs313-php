@@ -1,5 +1,8 @@
 <?php
-	include'connectdatabase.php';
+  include'connectdatabase.php';
+  $value = $_GET['Id'];
+  $questionValue = $db->query("SELECT * FROM questions where id = :value");
+  $db->bindValue(':value', $value, PDO::PARAM_INT);
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +14,7 @@
 	<title>Display Questions</title>
   <script>
         function onLoad() {
-            document.getElementById('question').value = $_POST['editQuestion'];
+            document.getElementById('question').value =  ;
         }
     function confirmation()
     {
