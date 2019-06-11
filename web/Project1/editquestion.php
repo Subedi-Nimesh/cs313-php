@@ -2,7 +2,7 @@
   include'connectdatabase.php';
   
   $value = $_GET['Id'];
-  $questionValue = $db->query("SELECT * FROM questions where id = :value");
+  $questionValue = $db->prepare("SELECT * FROM questions where id = :value");
   $questionValue->bindValue(':value', $value, PDO::PARAM_INT);
   $questionValue->execute();
 ?>
