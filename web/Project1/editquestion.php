@@ -48,7 +48,9 @@
 	<p><b>Edit Question:</b><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
-      echo "Enter New Question:  <input type='text' name='editquestion' id='question' required><br><br>";
+
+    $result = $questionValue->fetch(PDO::FETCH_ASSOC);
+      echo "Enter New Question:  <input type='text' name='editquestion' id='question' value=$result required><br><br>";
 
       echo "Select Answer:      <select name='answerSelect' required>";
         echo "<option>Choose Answer</option>";
