@@ -3,6 +3,7 @@
   $value = $_GET['Id'];
   $questionValue = $db->query("SELECT * FROM questions where id = :value");
   $db->bindValue(':value', $value, PDO::PARAM_INT);
+  $db->execute();
 ?>
 
 <!DOCTYPE html>
