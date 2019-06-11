@@ -60,6 +60,7 @@
                     echo "<option value=".$row['id'].">".$row['answer']."</option><br>";
             }
             echo "</select><br><br>";
+            echo "$value";
             echo "<input type='hidden' name='editId' value='$value'>";
     ?>
 
