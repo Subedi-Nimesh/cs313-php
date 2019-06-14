@@ -27,7 +27,7 @@
     $result = $questionValue->fetch(PDO::FETCH_ASSOC);
     $result = $result['questions'];
     echo "<div class='indent'>";
-      echo "Enter New Question:  <textarea name='editquestion' row='2' cols='50' id='question' required>$result</textarea><br><br>";
+      echo "Enter New Question:  <textarea name='editquestion' row='1' cols='50' id='question' required>$result</textarea><br><br>";
 
       echo "Select Answer:      <select name='answerSelect' required>";
         echo "<option>Choose Answer</option>";
