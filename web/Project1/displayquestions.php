@@ -64,7 +64,8 @@
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-			  	echo "<a href=\"editquestion.php?Id=".$row['id']."\">". $row['questions']. "</a><button><a href='editquestion.php?Id=".$row['id']."'>Edit Question</a></button><br>";
+          echo "<a href=\"displayquestion.php?Id=".$row['id']."\">". $row['questions']. "</a>";
+          echo "<button><a href='editquestion.php?Id=".$row['id']."'>Edit Question</a></button><br>";
       }
       
 		?>
