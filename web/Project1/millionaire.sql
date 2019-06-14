@@ -48,3 +48,5 @@ INSERT INTO questions (questions, answer_type, answers_id)
 SELECT * From questions Q JOIN answers A ON Q.answers_id=A.id;
 
 SELECT * From questions;
+
+SELECT * FROM questions ORDER BY RAND() LIMIT 1;
