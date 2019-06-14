@@ -19,7 +19,7 @@
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
     echo "<div class='indent'>";
-        echo "Enter New Question:  <input type='text' name='newQuestion' required><br>";
+        echo "Enter New Question:  <textarea name='newQuestion' required row='2' cols='50'><br>";
 
         echo "Select Answer:      <select name='answerSelect' required>";
         echo "<option>Choose Answer</option>";

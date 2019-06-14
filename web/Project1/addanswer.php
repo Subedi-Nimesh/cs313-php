@@ -27,7 +27,7 @@
       }
       echo "</select><br>";
 
-      echo "Enter New Answer:  <input type='text' name='newAnswer' required><br><br>";
+      echo "Enter New Answer:  <textarea name='newAnswer' row='2' cols='50'required></textarea><br><br>";
       echo "</div>";
 		?>
 
