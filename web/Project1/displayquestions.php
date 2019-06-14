@@ -14,17 +14,19 @@
     $answer_id = $_POST['answerSelect'];
     $id = $_POST['editId'];
     $db->query("UPDATE questions SET questions = '$question', answers_id = $answer_id WHERE id = $id");
-  } else if (isset($_POST['editAnswer'])) {
-    $answer = $_POST['editAnswer'];
-    $answer_type = $_POST['typeSelect'];
-    $db->query("UPDATE answers SET answer=$answer, answers_type=$answer_type WHERE id=id");
+  // } else if (isset($_POST['editAnswer'])) {
+  //   $answer = $_POST['editAnswer'];
+  //   $answer_type = $_POST['typeSelect'];
+  //   $db->query("UPDATE answers SET answer='$answer', answers_type=$answer_type WHERE id=id");
   } else if (isset($_POST['deleteQuestion'])) {
     $question = $_POST['deleteQuestion'];
-    $db->query("DELETE FROM questions WHERE id=id;");
+    $id = $_POST['deleteQid'];
+    $db->query("DELETE FROM questions WHERE id=$id;");
   } else if (isset($_POST['deleteAnswer'])) {
     $answer = $_POST['deleteAnswer'];
     $answer_type = $_POST['typeSelect'];
-    $db->query("DELETE FROM answers WHERE id=id;DELETE FROM questions WHERE id=answer_id;");
+    $id = $_POST['deleteAid'];
+    $db->query("DELETE FROM answers WHERE id=$id;DELETE FROM questions WHERE answer_id=$id;");
   }
 
 ?>
@@ -62,7 +64,7 @@
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-			  	echo "<a href=\"editquestion.php?Id=".$row['id']."\">". $row['questions']. "</a><br>";
+			  	echo "<a href=\"editquestion.php?Id=".$row['id']."\">". $row['questions']. "</a><button><a href='editquestion.php?Id=".$row['id']."'>Edit Question</a></button><br>";
       }
       
 		?>
