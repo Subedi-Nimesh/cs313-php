@@ -15,7 +15,7 @@
   </script>
 </head>
 <body>
-	<p><b>Add new Answers:</b><br> 
+	<p><h1><b>Add New Answers:</b><h1><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
     echo "<div class='indent'>";

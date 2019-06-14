@@ -15,11 +15,11 @@
   </script>
 </head>
 <body>
-	<p><b>Add new Questions:</b><br> 
+	<p><h1><b>Add New Questions:</b></h1><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
     echo "<div class='indent'>";
-        echo "Enter New Question:  <textarea name='newQuestion' required row='2' cols='50'><br>";
+        echo "Enter New Question:  <textarea name='newQuestion' row='2' cols='50' required></textarea><br>";
 
         echo "Select Answer:      <select name='answerSelect' required>";
         echo "<option>Choose Answer</option>";
