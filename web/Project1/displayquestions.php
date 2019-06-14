@@ -49,14 +49,17 @@ window.location="displayquestions.php?Id="+id;
 		<?php
     $number = 1;
     echo "<div class='indent'>";
+    echo "<table>"
     foreach ($db->query('SELECT * FROM questions') as $row)
-			{
-        echo "$number. ";
-          echo "<a href=\"javascript:confirmation(".$row['id'].");\">". $row['questions']. "</a>";
-          echo "<button><a href='editquestion.php?Id=".$row['id']."'><span style='font-family:Wingdings;'>?</span> Edit</a></button><br>";
-          $number += 1;
-        }
-        echo "</div>";
+    {
+      echo "<td>$number. ";
+      echo "<a href=\"javascript:confirmation(".$row['id'].");\">". $row['questions']. "</a></td>";
+      echo "<td><button><a href='editquestion.php?Id=".$row['id']."'><span style='font-family:Wingdings;'>?</span> Edit</a></button><br></td>";
+      $number += 1;
+    }
+    
+    echo "</table>"
+    echo "</div>";
 		?>
 
     <button class='button'><a href="addquestion.php">Add Question</a></button>
