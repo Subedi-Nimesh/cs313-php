@@ -18,9 +18,8 @@
   //   $answer = $_POST['editAnswer'];
   //   $answer_type = $_POST['typeSelect'];
   //   $db->query("UPDATE answers SET answer='$answer', answers_type=$answer_type WHERE id=id");
-  } else if (isset($_POST['deleteQuestion'])) {
-    $question = $_POST['deleteQuestion'];
-    $id = $_POST['deleteQid'];
+  } else if (isset($_GET['Id'])) {
+    $id = $_GET['Id'];
     $db->query("DELETE FROM questions WHERE id=$id;");
   } else if (isset($_POST['deleteAnswer'])) {
     $answer = $_POST['deleteAnswer'];
@@ -38,6 +37,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Display Questions</title>
+  <script>
+    function confirmation(id) {
+    var answer = confirm("Are you sure you want to delete it?")
+if (answer)
+window.location="displayquestions.php?Id="+id;
+}
+</script>
 </head>
 <body>
 <!-- <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -64,7 +70,7 @@
 		<?php
 			foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-          echo "<a href=\"displayquestions.php?Id=".$row['id']."\">". $row['questions']. "</a>";
+          echo "<a href=\"javascript:confirmation(".$row['id'].");\">". $row['questions']. "</a>";
           echo "<button><a href='editquestion.php?Id=".$row['id']."'>Edit Question</a></button><br>";
       }
       
