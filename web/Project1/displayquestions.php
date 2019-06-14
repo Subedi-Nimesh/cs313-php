@@ -59,8 +59,8 @@ window.location="displayquestions.php?Id="+id;
         echo "</div>";
 		?>
 
-    <button><a href="addquestion.php">Add Question</a></button>
-    <button><a href="addanswer.php">Add Answer</a></button>
+    <button class='button'><a href="addquestion.php">Add Question</a></button>
+    <button class='button'><a href="addanswer.php">Add Answer</a></button>
   </p>
   </body>
 </html>
