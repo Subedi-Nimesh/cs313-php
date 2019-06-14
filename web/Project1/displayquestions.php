@@ -33,9 +33,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="edit.css">
 	<title>Display Questions</title>
   <script>
     function confirmation(id) {
@@ -50,17 +48,19 @@ window.location="displayquestions.php?Id="+id;
 	<p><b>All Questions:</b><br> 
 		<?php
     $number = 1;
-			foreach ($db->query('SELECT * FROM questions') as $row)
+    echo "<div class='indent'>";
+    foreach ($db->query('SELECT * FROM questions') as $row)
 			{
-        echo "\t"+" $number) ";
+        echo "";
           echo "<a href=\"javascript:confirmation(".$row['id'].");\">". $row['questions']. "</a>";
           echo "<button><a href='editquestion.php?Id=".$row['id']."'>Edit Question</a></button><br>";
           $number += 1;
         }
-      
+        echo "</div>";
 		?>
 
     <button><a href="addquestion.php">Add Question</a></button>
     <button><a href="addanswer.php">Add Answer</a></button>
-    </body>
+  </p>
+  </body>
 </html>
