@@ -49,7 +49,7 @@ window.location="displayquestions.php?Id="+id;
 		<?php
     $number = 1;
     echo "<div class='indent'>";
-    echo "<table>"
+    echo "<table>";
     foreach ($db->query('SELECT * FROM questions') as $row)
     {
       echo "<tr><td>$number. <a href=\"javascript:confirmation(".$row['id'].");\">". $row['questions']. "</a></td>";
@@ -57,7 +57,7 @@ window.location="displayquestions.php?Id="+id;
       $number += 1;
     }
     
-    echo "</table>"
+    echo "</table>";
     echo "</div>";
 		?>
 
