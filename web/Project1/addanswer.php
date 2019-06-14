@@ -5,9 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="edit.css">
 	<title>Display Questions</title>
   <script>
     function confirmation()
@@ -20,6 +18,7 @@
 	<p><b>Add new Answers:</b><br> 
 	<form action="displayquestions.php" onsubmit='return confirmation()' method="POST">
   	<?php
+    echo "<div class='indent'>";
     echo "Select Type:      <select name='typeSelect' required>";
     echo "<option>Choose Types</option>";
 			foreach ($db->query('SELECT * FROM types') as $row)
@@ -29,10 +28,10 @@
       echo "</select><br>";
 
       echo "Enter New Answer:  <input type='text' name='newAnswer' required><br><br>";
-
+      echo "</div>";
 		?>
 
-    <button type='submit'>Submit</button>
+    <button class='button' type='submit'>Submit</button>
   </form>
 </body>
 </html>
