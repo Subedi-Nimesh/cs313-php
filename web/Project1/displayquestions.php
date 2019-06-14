@@ -53,7 +53,7 @@ window.location="displayquestions.php?Id="+id;
 			{
         echo "$number. ";
           echo "<a href=\"javascript:confirmation(".$row['id'].");\">". $row['questions']. "</a>";
-          echo "<button><a href='editquestion.php?Id=".$row['id']."'>Edit Question</a></button><br>";
+          echo "<button><a href='editquestion.php?Id=".$row['id']."'><span style='font-family:Wingdings;'>?</span></a></button><br>";
           $number += 1;
         }
         echo "</div>";
