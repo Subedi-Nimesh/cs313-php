@@ -13,7 +13,7 @@
     $question = $_POST['editquestion'];
     $answer_id = $_POST['answerSelect'];
     $id = $_POST['editId'];
-    $db->query("UPDATE questions SET question=$question, answers_id = $answer_id WHERE id = $id");
+    $db->query("UPDATE questions SET question = '$question', answers_id = $answer_id WHERE id = $id");
   } else if (isset($_POST['editAnswer'])) {
     $answer = $_POST['editAnswer'];
     $answer_type = $_POST['typeSelect'];

@@ -15,9 +15,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Display Questions</title>
   <script>
-        function onLoad() {
-            document.getElementById('question').value =  ;
-        }
     function confirmation()
     {
       return confirm('Are you sure?');
@@ -60,7 +57,6 @@
                     echo "<option value=".$row['id'].">".$row['answer']."</option><br>";
             }
             echo "</select><br><br>";
-            echo "$value";
             echo "<input type='hidden' name='editId' value='$value'>";
     ?>
 
