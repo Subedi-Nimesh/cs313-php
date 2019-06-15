@@ -1,5 +1,6 @@
 <?php
-	include'connectdatabase.php';
+    include'connectdatabase.php';
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +13,12 @@
     <title>Game</title>
 </head>
 <body>
+    <?php
+        $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
+        $result = $displayQues->fetch(PDO::FETCH_ASSOC);
+        $result = $result['questions'];
+        echo "$result";
+    ?>
     
 </body>
 </html>
