@@ -22,9 +22,10 @@
         $result = $displayQues->fetch(PDO::FETCH_ASSOC);
         $resultQ = $result['questions'];
         $resultA = $result['answer'];
-        $resultAns = $result['answer_id'];
+        $resultAns = $result['answers_id'];
         $resultAnsType = $result['answer_type'];
         echo "$resultQ";
+        echo "$resultAns";
         echo "<input type='radio' value='$resultAns' >$resultA";
         $displayQues = $db->query("SELECT * From answers WHERE answer_type=$resultAnsType AND answer_id!=$resultAns ORDER BY RANDOM() LIMIT 3");
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
