@@ -31,6 +31,7 @@
         foreach ($result as $incorrect){
             echo "<input type='radio' value=".$incorrect['id'].">".$incorrect['answer'];
         }
+        echo "HI";
 
     ?>
     
