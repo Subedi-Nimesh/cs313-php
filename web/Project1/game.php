@@ -18,10 +18,14 @@
         // $result = $displayQues->fetch(PDO::FETCH_ASSOC);
         // $result = $result['questions'];
         // echo "$result";
-        $displayQues = $db->query("SELECT * FROM questions ORDER BY RANDOM() LIMIT 1");
+        $displayQues = $db->query("SELECT * From questions Q INNER JOIN answers A ON Q.answers_id=A.id ORDER BY RANDOM() LIMIT 1");
         $result = $displayQues->fetch(PDO::FETCH_ASSOC);
-        $result = $result['questions'];
-        echo "$result";
+        $resultQ = $result['questions'];
+        $resultA = $result['answer'];
+        $resultAns = $result['answer_id'];
+        echo "$resultQ";
+        echo "<input type='radio' value='$resultAns' >$resultA";
+
     ?>
     
 </body>
