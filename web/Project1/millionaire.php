@@ -3,7 +3,7 @@
     session_start();
     $_SESSION['Answer_id'] = -1;
     $_SESSION['Score'] = 0;
-    $_SESSION['Prev'] = array(-1);
+    // $_SESSION['Prev'] = array(-1);
 ?>
 
 <!DOCTYPE html>

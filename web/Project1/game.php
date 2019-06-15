@@ -14,7 +14,11 @@
 </head>
 <body>
     <?php
-        $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
+        // $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
+        // $result = $displayQues->fetch(PDO::FETCH_ASSOC);
+        // $result = $result['questions'];
+        // echo "$result";
+        $displayQues = $db->query("SELECT * FROM questions ORDER BY RANDOM() LIMIT 1");
         $result = $displayQues->fetch(PDO::FETCH_ASSOC);
         $result = $result['questions'];
         echo "$result";
