@@ -29,7 +29,7 @@
         $resultAns = $result['answers_id'];
         $_SESSION['Answer_id'] = $resultAns;
         $resultAnsType = $result['answer_type'];
-        echo "$resultQ <br>";
+        echo "<p class='question'>$resultQ <p><br>";
         // echo "<input type='radio' value='$resultAns' >$resultA<Br>";
         $display = rand(1,4);
         $count = 1;
