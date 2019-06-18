@@ -14,7 +14,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <a href="game.php">Start Game</a>
+<body style="background-image:url('cover.jpg'); height=100%;
+		background-position: center; background-repeat: no-repeat;
+		background-size: cover;">
+    <button><a href="game.php">Start Game</a></Button>
+    <button><a href="displayquestion.php">Edit Questions</a></Button>
 </body>
 </html>
