@@ -34,7 +34,7 @@
             if($count == $display){
                 echo "<input type='radio' value='$resultAns' >$resultA<Br>";
             }
-            count += 1;
+            $count += 1;
             echo "<input type='radio' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
         }
         if($count == 4){
