@@ -37,7 +37,7 @@
                 echo "<input type='radio' class='hover' name='selected' value='$resultAns' >$resultA<Br>";
             }
             $count += 1;
-            echo "<input type='radio' class='hover' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
+            echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><Br>";
         }
         if($display == 4){
             echo "<input type='radio' class='hover' name='selected' value='$resultAns' >$resultA<Br>";
