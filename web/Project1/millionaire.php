@@ -17,7 +17,7 @@
 <body style="background-image:url('cover.jpg'); height=100%;
 		background-position: center; background-repeat: no-repeat;
 		background-size: cover;">
-    <button><a href="game.php">Start Game</a></Button>
-    <button><a href="displayquestion.php">Edit Questions</a></Button>
+    <button style ="margin-left:239px"><a href="game.php">Start Game</a></Button>
+    <button style ="margin-top:307px"><a href="displayquestion.php">Edit Questions</a></Button>
 </body>
 </html>
