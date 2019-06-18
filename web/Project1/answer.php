@@ -23,7 +23,7 @@
         } else {
             echo "Congrats you have completed the game.";
             echo "<button><a href = 'millionaire.php'>Start Over</a></button>";
-            echo "<button><a href = 'google.com'>Claim Reward</a></button>";
+            echo "<button><a href = ''>Claim Reward</a></button>";
         }
     } else {
         echo "Boo. It was incorrect. Your final score is ". $_SESSION['Score'];

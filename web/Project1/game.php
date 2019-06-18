@@ -34,13 +34,13 @@
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $incorrect){
             if($count == $display){
-                echo "<input type='radio' name='selected' value='$resultAns' >$resultA<Br>";
+                echo "<input type='radio' class='hover' name='selected' value='$resultAns' >$resultA<Br>";
             }
             $count += 1;
-            echo "<input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
+            echo "<input type='radio' class='hover' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
         }
         if($display == 4){
-            echo "<input type='radio' name='selected' value='$resultAns' >$resultA<Br>";
+            echo "<input type='radio' class='hover' name='selected' value='$resultAns' >$resultA<Br>";
         }
     ?>
     <button class="button" type="submit">Submit</button>
