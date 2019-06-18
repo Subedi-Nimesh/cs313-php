@@ -37,10 +37,10 @@
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $incorrect){
             if($count == $display){
-                echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span>";
+                echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA</span>";
             }
             $count += 1;
-            echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><Br>";
+            echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span>";
         }
         if($display == 4){
             echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span>";
