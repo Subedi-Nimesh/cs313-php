@@ -17,6 +17,7 @@
 		background-size: cover;">
 <form action="answer.php" method="POST">
     <?php
+        echo "<div class='text'>";
         // $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
         // $result = $displayQues->fetch(PDO::FETCH_ASSOC);
         // $result = $result['questions'];
@@ -36,14 +37,15 @@
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $incorrect){
             if($count == $display){
-                echo "<input type='radio' class='hover' name='selected' value='$resultAns' >$resultA<Br>";
+                echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span>";
             }
             $count += 1;
             echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><Br>";
         }
         if($display == 4){
-            echo "<input type='radio' class='hover' name='selected' value='$resultAns' >$resultA<Br>";
+            echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span>";
         }
+        echo "</div>";
     ?>
     <button class="button" type="submit">Submit</button>
     </form>

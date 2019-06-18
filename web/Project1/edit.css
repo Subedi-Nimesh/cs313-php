@@ -18,24 +18,11 @@ select, textarea {
     font-size: 18px;
 }
 
-.navbar 
-			{
-    			overflow: hidden;
-    			background-color: #333;
-    			font-family: Arial, Helvetica, sans-serif;
-			}
-			
-			.navbar a 
-			{
- 				float: center;
-	    		font-size: 18px;
-	    		color: white;
-	    		text-align: center;
-	    		padding: 14px 16px;
-    			text-decoration: none;
-			}
-			
-			.hover:hover
-			{
-    			background-color: red;
-    		}
+.hover:hover {
+	background-color: red;
+}
+
+.text {
+	font-size: 18px;
+	color: white;
+}
