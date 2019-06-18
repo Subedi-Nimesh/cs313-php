@@ -24,12 +24,21 @@
         $resultA = $result['answer'];
         $resultAns = $result['answers_id'];
         $resultAnsType = $result['answer_type'];
-        echo "$resultQ";
-        echo "<input type='radio' value='$resultAns' >$resultA<Br>";
+        echo "$resultQ <br>";
+        // echo "<input type='radio' value='$resultAns' >$resultA<Br>";
+        $display = rand(1,4);
+        $count = 1;
         $displayQues = $db->query("SELECT * From answers WHERE answer_type=$resultAnsType AND id!=$resultAns ORDER BY RANDOM() LIMIT 3");
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $incorrect){
+            if($count == $display){
+                echo "<input type='radio' value='$resultAns' >$resultA<Br>";
+            }
+            count += 1;
             echo "<input type='radio' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
+        }
+        if($count == 4){
+            echo "<input type='radio' value='$resultAns' >$resultA<Br>";
         }
     ?>
     
