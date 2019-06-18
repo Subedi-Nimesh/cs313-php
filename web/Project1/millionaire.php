@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="edit.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +18,7 @@
 <body style="background-image:url('cover.jpg'); height=100%;
 		background-position: center; background-repeat: no-repeat;
 		background-size: cover;">
-    <button style ="margin-left:700px"><a href="game.php">Start Game</a></Button>
-    <button style ="margin-top:650px"><a href="displayquestion.php">Edit Questions</a></Button>
+    <button class = "Button" style ="margin-left:700px"><a href="game.php">Start Game</a></Button>
+    <button class = "Button" style ="margin-top:650px"><a href="displayquestion.php">Edit Questions</a></Button>
 </body>
 </html>
