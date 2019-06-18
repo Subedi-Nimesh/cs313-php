@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
 </head>
-<body style="background-image:url('sample.jpg'); height=100%;
+<body style="background-image:url('sample.jpg');
 		background-position: center; background-repeat: no-repeat;
 		background-size: cover;">
 <form action="answer.php" method="POST">
