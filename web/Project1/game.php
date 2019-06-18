@@ -12,7 +12,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
 </head>
-<body>
+<body style="background-image:url('sample question.jpg'); height=100%;
+		background-position: center; background-repeat: no-repeat;
+		background-size: cover;">
 <form action="answer.php" method="POST">
     <?php
         // $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
