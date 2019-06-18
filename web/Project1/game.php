@@ -6,13 +6,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="edit.css">
+    <link rel="stylesheet" href="edit.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
 </head>
 <body>
+<form action="answer.php" method="POST">
     <?php
         // $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
         // $result = $displayQues->fetch(PDO::FETCH_ASSOC);
@@ -23,6 +24,7 @@
         $resultQ = $result['questions'];
         $resultA = $result['answer'];
         $resultAns = $result['answers_id'];
+        $_SESSION['Answer_id'] = $resultAns;
         $resultAnsType = $result['answer_type'];
         echo "$resultQ <br>";
         // echo "<input type='radio' value='$resultAns' >$resultA<Br>";
@@ -32,15 +34,17 @@
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $incorrect){
             if($count == $display){
-                echo "<input type='radio' value='$resultAns' >$resultA<Br>";
+                echo "<input type='radio' name='Selected' value='$resultAns' >$resultA<Br>";
             }
             $count += 1;
-            echo "<input type='radio' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
+            echo "<input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."<Br>";
         }
         if($display == 4){
-            echo "<input type='radio' value='$resultAns' >$resultA<Br>";
+            echo "<input type='radio' name='selected' value='$resultAns' >$resultA<Br>";
         }
     ?>
+    <button class="button" type="submit">Submit</button>
+    </form>
     
 </body>
 </html>
