@@ -15,9 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body style="background-image:url('cover.jpg'); height=100%;
-		background-position: center; background-repeat: no-repeat;
-		background-size: cover;">
+<body style="background-color:blue">
+<img src="logo.png";>
     <button class = "button" style ="margin-left:640px"><a href="game.php">Start Game</a></Button>
     <button class = "button" style ="margin-top:650px"><a href="displayquestions.php">Edit Questions</a></Button>
 </body>
