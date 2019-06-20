@@ -12,11 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
 </head>
-<body style="background-image:url('sample.jpg');
-		background-position: center; background-repeat: no-repeat;
-		background-size: cover;">
-<form action="answer.php" method="POST">
-    <?php
+<body style="background-color: darkblue;">
+<img src="logo.png" width='766px' height='581.33px'>
+    <br>
+    <form action="answer.php" method="POST">
+        <?php
         echo "<div class='text'>";
         // $displayQues = $db->query("SELECT * FROM questions WHERE ID NOT IN ($_SESSION['Prev']) ORDER BY RANDOM() LIMIT 1");
         // $result = $displayQues->fetch(PDO::FETCH_ASSOC);
