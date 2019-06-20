@@ -29,7 +29,7 @@
         $resultAns = $result['answers_id'];
         $_SESSION['Answer_id'] = $resultAns;
         $resultAnsType = $result['answer_type'];
-        echo "<p class='question'>$resultQ <p><br>";
+        echo "<p>$resultQ <p><br>";
         // echo "<input type='radio' value='$resultAns' >$resultA<Br>";
         $display = rand(1,4);
         $count = 1;
@@ -37,13 +37,13 @@
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         foreach ($result as $incorrect){
             if($count == $display){
-                echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA</span>";
+                echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA</span><br>";
             }
             $count += 1;
-            echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span>";
+            echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><br>";
         }
         if($display == 4){
-            echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span>";
+            echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span><br>";
         }
         echo "</div>";
     ?>
