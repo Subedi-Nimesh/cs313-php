@@ -22,13 +22,9 @@ select, textarea {
 	background-color: red;
 }
 
-.question{
-	margin-top: 400px;
-	margin-left: 250px;
-}
-
 .text {
 	font-size: 50px;
     color: white;
     background-color:#000d1a;
+    text-align: center;
 }
