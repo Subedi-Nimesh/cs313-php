@@ -17,7 +17,7 @@
 </head>
 <body style="background-color: darkblue;">
 <img src="logo.png" width='766px' height='581.33px'>
-    <button class = "button" style ="margin-left:50px"><a href="game.php">Start Game</a></Button>
+    <button class = "button" style ="margin-left:10px"><a href="game.php">Start Game</a></Button>
     <button class = "button"><a href="displayquestions.php">Edit Questions</a></Button>
 </body>
 </html>
