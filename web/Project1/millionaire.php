@@ -16,7 +16,7 @@
     <title>Millionaire</title>
 </head>
 <body style="background-color: darkblue;">
-<img src="logo.png" width='1149px' height='872px'>
+<img src="logo.png" width='572.5px' height='218px'>
     <button class = "button" style ="margin-left:425px"><a href="game.php">Start Game</a></Button>
     <button class = "button"><a href="displayquestions.php">Edit Questions</a></Button>
 </body>
