@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Millionaire</title>
 </head>
-<body class="body">
+<body style="background-color: darkblue;">
 <img src="logo.png" width='1149px' height='872px'>
     <button class = "button" style ="margin-left:425px"><a href="game.php">Start Game</a></Button>
     <button class = "button"><a href="displayquestions.php">Edit Questions</a></Button>
