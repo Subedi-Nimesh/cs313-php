@@ -36,16 +36,25 @@
         $displayQues = $db->query("SELECT * From answers WHERE answer_type=$resultAnsType AND id!=$resultAns ORDER BY RANDOM() LIMIT 3");
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
         echo "<div class='answers'>";
+        echo "<table><tr>";
         foreach ($result as $incorrect){
-            if($count == $display){
-                echo "<span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA</span><br>";
+            if ($count == 3) {
+               echo "</tr><tr>";
             }
+            if($count == $display){
+                echo "<td><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA</span></td>";
+                $count += 1;
+            }
+            if ($count == 3) {
+                echo "</tr><tr>";
+            }
+            echo "<td><span class='hover input'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span></td>";
             $count += 1;
-            echo "<span class='hover input'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><br>";
         }
         if($display == 4){
-            echo "<span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span><br>";
+            echo "<td><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span></td><br>";
         }
+        echo "</tr></table>";
         echo "</div>";
         echo "</div>";
     ?>
