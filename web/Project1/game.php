@@ -54,11 +54,13 @@
         if($display == 4){
             echo "<td><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span></td><br>";
         }
-        echo "</tr></table>";
+        echo "</tr><tr>";
         // echo "</div>";
         echo "</div>";
+        echo "<td><button class='button' type='submit'>Submit</button></tr>";
+        echo "</tr></table>";
     ?>
-    <button class="button" type="submit">Submit</button>
+
     </form>
     
 </body>
