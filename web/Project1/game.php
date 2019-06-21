@@ -38,13 +38,13 @@
         echo "<div class='answers'>";
         foreach ($result as $incorrect){
             if($count == $display){
-                echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA</span><br>";
+                echo "<span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA</span><br>";
             }
             $count += 1;
-            echo "<span class='hover'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><br>";
+            echo "<span class='hover input'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span><br>";
         }
         if($display == 4){
-            echo "<span class='hover'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span><br>";
+            echo "<span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span><br>";
         }
         echo "</div>";
         echo "</div>";
