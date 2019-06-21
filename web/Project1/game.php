@@ -35,8 +35,8 @@
         $count = 1;
         $displayQues = $db->query("SELECT * From answers WHERE answer_type=$resultAnsType AND id!=$resultAns ORDER BY RANDOM() LIMIT 3");
         $result = $displayQues->fetchAll(PDO::FETCH_ASSOC);
-        echo "<div class='answers'>";
-        echo "<table><tr>";
+        // echo "<div class='answers'>";
+        echo "<table class='table'><tr>";
         foreach ($result as $incorrect){
             if ($count == 3) {
                echo "</tr><tr>";
@@ -55,7 +55,7 @@
             echo "<td><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span></td><br>";
         }
         echo "</tr></table>";
-        echo "</div>";
+        // echo "</div>";
         echo "</div>";
     ?>
     <button class="button" type="submit">Submit</button>
