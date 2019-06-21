@@ -33,7 +33,12 @@ select, textarea {
     margin-right: auto;
 }
 
-td{
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.td{
     background-color:#000d1a;
     width:0.01%;
 }

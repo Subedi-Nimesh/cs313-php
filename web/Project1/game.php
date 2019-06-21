@@ -42,23 +42,22 @@
                echo "</tr><tr>";
             }
             if($count == $display){
-                echo "<td><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA</span></td>";
+                echo "<td class='td'><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA</span></td>";
                 $count += 1;
             }
             if ($count == 3) {
                 echo "</tr><tr>";
             }
-            echo "<td><span class='hover input'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span></td>";
+            echo "<td class='td'><span class='hover input'><input type='radio' name='selected' value=".$incorrect['id'].">".$incorrect['answer']."</span></td>";
             $count += 1;
         }
         if($display == 4){
-            echo "<td><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span></td><br>";
+            echo "<td class='td'><span class='hover input'><input type='radio' name='selected' value='$resultAns' >$resultA<Br></span></td><br>";
         }
-        echo "</tr><tr>";
+        echo "</tr></table>";
         // echo "</div>";
         echo "</div>";
-        echo "<td><button class='button' type='submit'>Submit</button></tr>";
-        echo "</tr></table>";
+        echo "<span class='submit'><button class='button' type='submit'>Submit</button></span>";
     ?>
 
     </form>
