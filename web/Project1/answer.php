@@ -15,7 +15,6 @@
 <img src="logo.png" style="  margin-left: auto; margin-right: auto;" width='766px' height='581.33px'>
     <br>
     <div class="text">
-
     <?php
     $selectedAns = $_POST['selected'];
     $correctAns = $_SESSION['Answer_id'];
