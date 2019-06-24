@@ -14,8 +14,9 @@
 <body style="background-color: darkblue;">
 <img src="logo.png" width='766px' height='581.33px'>
     <br>
-    <?php
     <div class="text">
+
+    <?php
     $selectedAns = $_POST['selected'];
     $correctAns = $_SESSION['Answer_id'];
     if($selectedAns == $correctAns)
