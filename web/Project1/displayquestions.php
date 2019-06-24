@@ -44,8 +44,8 @@ window.location="displayquestions.php?Id="+id;
 </script>
 </head>
 <body>
-
-	<p><h1><b>All Questions:</b></h1><br> 
+<button><a href="millionaire.php">Go Back</a></button><br><br>
+	<p><h1><b>Displaying All Questions:</b></h1><br> 
 		<?php
     $number = 1;
     echo "<div class='indent'>";
