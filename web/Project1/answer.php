@@ -15,6 +15,7 @@
 <img src="logo.png" width='766px' height='581.33px'>
     <br>
     <?php
+    <div class="text">
     $selectedAns = $_POST['selected'];
     $correctAns = $_SESSION['Answer_id'];
     if($selectedAns == $correctAns)
@@ -22,16 +23,17 @@
         $_SESSION['Score'] += 1;
         if($_SESSION['Score'] != 10) {
         echo "<h1>Congrats.</h1><br> It was correct.<br><b> Your total score is ". $_SESSION['Score'];
-        echo "</b><br><button><a href = 'game.php'>Next Question</a></button>";
+        echo "</b><br><button class='button'><a href = 'game.php'>Next Question</a></button>";
         } else {
             echo "Congrats you have completed the game.";
-            echo "<button><a href = 'millionaire.php'>Start Over</a></button>";
-            echo "<button><a href = ''>Claim Reward</a></button>";
+            echo "<button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
+            echo "<button class='button'><a href = ''>Claim Reward</a></button>";
         }
     } else {
         echo "Boo. It was incorrect. Your final score is ". $_SESSION['Score'];
-        echo "<button><a href = 'millionaire.php'>Start Over</a></button>";
+        echo "<button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
     }
     ?>
+    </div>
 </body>
 </html>
