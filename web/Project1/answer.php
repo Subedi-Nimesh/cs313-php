@@ -12,7 +12,7 @@
     <title>Result</title>
 </head>
 <body style="background-color: darkblue;">
-<img src="logo.png" style="align=center"; width='766px' height='581.33px'>
+<img src="logo.png" style="  margin-left: auto; margin-right: auto;" width='766px' height='581.33px'>
     <br>
     <div class="text">
 
@@ -31,8 +31,8 @@
             echo "<button class='button'><a href = ''>Claim Reward</a></button>";
         }
     } else {
-        echo "Boo.<br> It was incorrect.<br> Your final score is ". $_SESSION['Score'];
-        echo "<br><button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
+        echo "Boo.<br> It was incorrect.<br><b> Your final score is ". $_SESSION['Score'];
+        echo "</b><br><button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
     }
     ?>
     </div>
