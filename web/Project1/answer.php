@@ -26,13 +26,13 @@
         echo "<h1>Congrats.</h1><br> It was correct.<br><b> Your total score is ". $_SESSION['Score'];
         echo "</b><br><button class='button'><a href = 'game.php'>Next Question</a></button>";
         } else {
-            echo "Congrats you have completed the game.";
+            echo "Congrats you have completed the game.<br>";
             echo "<button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
             echo "<button class='button'><a href = ''>Claim Reward</a></button>";
         }
     } else {
-        echo "Boo. It was incorrect. Your final score is ". $_SESSION['Score'];
-        echo "<button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
+        echo "Boo.<br> It was incorrect.<br> Your final score is ". $_SESSION['Score'];
+        echo "<br><button class='button'><a href = 'millionaire.php'>Start Over</a></button>";
     }
     ?>
     </div>
