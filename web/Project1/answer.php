@@ -12,7 +12,7 @@
     <title>Result</title>
 </head>
 <body style="background-color: darkblue;">
-<img src="logo.png" width='766px' height='581.33px'>
+<img src="logo.png" style="align=center"; width='766px' height='581.33px'>
     <br>
     <div class="text">
 
